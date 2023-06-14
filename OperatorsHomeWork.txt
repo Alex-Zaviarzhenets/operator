@@ -1,0 +1,35 @@
+Zaviarzhenets Aliaksei
+13.06.2023
+
+package HOMEWORK;
+
+import java.util.Scanner;
+
+public class OpeRator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("print month: ");
+        int month = sc.nextInt();
+        String season = null;
+
+
+        if (month >= 1 && month <= 12) {
+            if (month >= 3 && month <= 5) {
+                season = "spring";
+            } else if (month >= 6 && month <= 8) {
+                season = "Summer";
+            } else if (month >= 9 && month <= 11) {
+                season = "autumn";
+            } else {
+                season = "winter";
+            }
+
+
+            System.out.println("month: " + month + " season: " + season);
+        } else {
+            System.out.println("no valid number:(");
+        }
+    }
+}
+
+
